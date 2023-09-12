@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(18, 18, 62);
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .form-conatiner {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0, 2);
+        }
+
+        .form-header {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: bold;
+            background-color: blue;
+
+
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #100101;
+            border-radius: 3px;
+
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #e6940f;
+            color: #f2ebf3;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #ea7c0f;
+        }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">SkyBright Travels</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                    <li>More info</li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div>
+        <div class="form-container">
+
+            <div class="form-header">Travel Form</div>
+            <form>
+                <div class="form-group">
+
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="form-group">
+
+                    <label for="Mobile No.">Mobile No.</label>
+                    <input type="text" placeholder="Enter your mobile no." name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="someone@gmail.com" id="name" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="kedarnath">Kedarnath</option>
+                        <option value="badrinath">Badrinath</option>
+                        <option value="amarnath">Amarnath</option>
+                        <option value="somnath">Somnath</option>
+                        <option value="kashi viswanath">Kashi Vishwanath</option>
+                        <option value="om karyeswar">Om Karyeswar</option>
+                        <option value="maheshwar">Maheshwar</option>
+                        <option value="janapav">Janapav</option>
+                        <option value="shitlamata waterfall">Shitla Mata Waterfall</option>
+                        <option value="ujjain">Ujjain</option>
+                        <option value="depalpur">Depalpur</option>
+                        <option value="sagore">Sagore</option>
+                        <option value="canada">Canada</option>
+                        <option value="tokyo">Tokyo</option>
+                        <option value="newyork">Newyork</option>
+                        <option value="paris">Paris</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
